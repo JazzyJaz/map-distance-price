@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+
+<meta charset="utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1  ">
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+      <title>VTC</title>
+
+      <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+
+<script type="text/javascript">
+
+</script>
+
+
+
+  <body>
+      <div class="content">
+          <div id="map_container">
+            <div id="destinationForm">
+            <div id="map">
+                <p>Veuillez patienter pendant le chargement de la carte...</p>
+                </div>
+                <form action="XXX" method="get" name="direction" id="direction">
+                  <div id= "form-container">
+
+                    <div class="formblock">
+                      <label for="origin">Point de départ :</label>
+                      <input type="text" name="origin" id="origin">
+                    </div>
+
+                    <div class="formblock">  
+                      <label for="destination">Destination :</label>
+                      <input type="text" name="destination" id="destination">
+                    </div>
+
+                    <div class="calculbtn">
+                      <input type="button" value="Calculer l'itinéraire" onclick="javascript:calculate(); CalculDistance();">
+                    </div>
+                  </div>
+
+                    <p id="prixcalcule">Prix : <input type="text" name="distance" />&nbsp;euros&nbsp;</p>
+
+
+                </form>
+                
+
+                <div id="panel">
+                </div>
+
+            </div><!--destinationForm-->
+          </div><!--map_container-->
+
+
+    <!-- Include Javascript -->
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&language=fr"></script>
+    <script type="text/javascript" src="js/functions.js"></script>
+  </body>
+</html>
